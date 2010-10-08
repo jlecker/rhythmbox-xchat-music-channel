@@ -8,9 +8,9 @@ see what song was currently playing, and to be able to skip songs we don't
 like. We created a channel specifically to use with this plugin; everyone
 joins, one person plays the music, and it works.
 
-Mostly I am putting up here because we did not find any other plugins to
-accomplish this, and it seems others might benefit. Perhaps it can be forked
-and improved for everyone.
+I am putting up here because we did not find any other plugins to accomplish
+this, and it seems others might benefit. Also for us to collaborate, and
+perhaps others can fork it to be improved for everyone.
 
 The first revision was written in a few hours, so it is quite rough. The
 channel to use is hard-coded in the plugin, so it must be changed in the
