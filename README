@@ -1,6 +1,6 @@
-This plugin will automatically announce artist, title, and album to a channel
-when a track is played. It will also allow any user in the channel to type
-'next' to go to the next song in the current playlist.
+This Rhythmbox plugin will automatically announce artist, title, and album to
+a channel when a track is played. It will also allow any user in the channel
+to type 'next' to go to the next song in the current playlist.
 
 This was created for an office where three of us listen to the same music,
 which is played by one member of the team. We wanted everyone to be able to
@@ -18,9 +18,9 @@ Python source. Also, make sure that XChat is started and the channel is joined
 before activating the plugin, else it will either not work or possibly
 announce tracks to a random channel.
 
-Immediate & obvious improvements:
+Obvious improvements:
     - Allow configuration of network and channel through Rhythmbox.
-    - Don't spam other channels if the correct channel not found.
-        - Either join the channel automatically or fail silently.
+    - Don't spam other channels if the correct channel is not found. Join the
+      channel automatically or at least fail silently.
     - More flexibility in the order of starting Rhythmbox & XChat, and joining
       the channel.
