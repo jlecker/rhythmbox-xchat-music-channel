@@ -1,3 +1,6 @@
+SERVER = 'irc.freenode.net'
+CHANNEL = '##rb_music_channel'
+
 import rb
 import rhythmdb
 import dbus
@@ -16,7 +19,7 @@ class MwcDevsMusicPlugin(rb.Plugin):
         self.xchat_object = self.bus.get_object('org.xchat.service', '/org/xchat/Remote')
         xchat = dbus.Interface(self.xchat_object, 'org.xchat.plugin')
         self.xchat_hook = xchat.HookPrint('Channel Message', 0, 0)
-        self.xchat_context = int(xchat.FindContext('irc.freenode.net', '##rb_music_channel'))
+        self.xchat_context = int(xchat.FindContext(SERVER, CHANNEL))
         
         self.event_id = self.player.connect('playing-song-changed', self.song_changed)
         self.bus.add_signal_receiver(

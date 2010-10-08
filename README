@@ -24,3 +24,8 @@ Obvious improvements:
       channel automatically or at least fail silently.
     - More flexibility in the order of starting Rhythmbox & XChat, and joining
       the channel.
+
+
+USAGE:
+    Copy the xchat_music_channel directory to your plugins directory (possibly
+    ~/.gnome2/rhythmbox/plugins). Set the server and channel in __init__.py
