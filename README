@@ -1,0 +1,26 @@
+This plugin will automatically announce artist, title, and album to a channel
+when a track is played. It will also allow any user in the channel to type
+'next' to go to the next song in the current playlist.
+
+This was created for an office where three of us listen to the same music,
+which is played by one member of the team. We wanted everyone to be able to
+see what song was currently playing, and to be able to skip songs we don't
+like. We created a channel specifically to use with this plugin; everyone
+joins, one person plays the music, and it works.
+
+Mostly I am putting up here because we did not find any other plugins to
+accomplish this, and it seems others might benefit. Perhaps it can be forked
+and improved for everyone.
+
+The first revision was written in a few hours, so it is quite rough. The
+channel to use is hard-coded in the plugin, so it must be changed in the
+Python source. Also, make sure that XChat is started and the channel is joined
+before activating the plugin, else it will either not work or possibly
+announce tracks to a random channel.
+
+Immediate & obvious improvements:
+    - Allow configuration of network and channel through Rhythmbox.
+    - Don't spam other channels if the correct channel not found.
+        - Either join the channel automatically or fail silently.
+    - More flexibility in the order of starting Rhythmbox & XChat, and joining
+      the channel.

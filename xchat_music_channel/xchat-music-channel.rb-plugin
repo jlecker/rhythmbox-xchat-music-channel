@@ -1,0 +1,9 @@
+[RB Plugin]
+Loader=python
+Module=xchat_music_channel
+IAge=1
+Name=XChat Music Channel
+Description=Automatically announce playing tracks to a channel. Allow users to control playback.
+Authors=James Lecker <james@jameslecker.com>
+Copyright=2010 James Lecker
+Website=http://github.com/jlecker/rhythmbox-xchat-music-channel
