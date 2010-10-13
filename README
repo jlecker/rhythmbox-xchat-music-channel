@@ -12,20 +12,10 @@ I am putting up here because we did not find any other plugins to accomplish
 this, and it seems others might benefit. Also for us to collaborate, and
 perhaps others can fork it to be improved for everyone.
 
-The first revision was written in a few hours, so it is quite rough. The
-channel to use is hard-coded in the plugin, so it must be changed in the
-Python source. Also, make sure that XChat is started and the channel is joined
-before activating the plugin, else it will either not work or possibly
-announce tracks to a random channel.
-
-Obvious improvements:
-    - Allow configuration of network and channel through Rhythmbox.
-    - Don't spam other channels if the correct channel is not found. Join the
-      channel automatically or at least fail silently.
-    - More flexibility in the order of starting Rhythmbox & XChat, and joining
-      the channel.
+The first revision was written in a few hours, so it is quite rough. Make sure
+that XChat is started and the channel is joined before activating the plugin.
 
 
 USAGE:
     Copy the xchat_music_channel directory to your plugins directory (possibly
-    ~/.gnome2/rhythmbox/plugins). Set the server and channel in __init__.py
+    ~/.gnome2/rhythmbox/plugins). Set the server/channel in the configuration.
