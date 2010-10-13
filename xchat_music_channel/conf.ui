@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<interface>
+  <object class="GtkDialog" id="prefs_dialog">
+    <property name="visible">True</property>
+    <property name="title">XChat Music Channel</property>
+    <child internal-child="vbox">
+      <object class="GtkVBox" id="dialog_box">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkHBox" id="prefs_box">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkVBox" id="server_box">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkLabel" id="server_label">
+                    <property name="visible">True</property>
+                    <property name="label">Server:</property>
+                    <property name="xalign">0</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="server_entry">
+                    <property name="visible">True</property>
+                    <property name="width-chars">20</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkVBox" id="channel_box">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkLabel" id="channel_label">
+                    <property name="visible">True</property>
+                    <property name="label">Channel:</property>
+                    <property name="xalign">0</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="channel_entry">
+                    <property name="visible">True</property>
+                    <property name="width-chars">20</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child internal-child="action_area">
+          <object class="GtkHButtonBox" id="button_box">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkButton" id="button_ok">
+                <property name="visible">True</property>
+                <property name="label">gtk-ok</property>
+                <property name="use_stock">True</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="-5">button_ok</action-widget>
+    </action-widgets>
+  </object>
+</interface>
