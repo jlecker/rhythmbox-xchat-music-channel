@@ -49,9 +49,12 @@ class XChatMusicChannelPlugin(rb.Plugin):
         xchat = self.get_xchat()
         self.xchat_context = xchat.FindContext(self.server, self.channel)
         if self.xchat_context:
-            artist = self.shell.props.db.entry_get(entry, rhythmdb.PROP_ARTIST)
-            title = self.shell.props.db.entry_get(entry, rhythmdb.PROP_TITLE)
-            album = self.shell.props.db.entry_get(entry, rhythmdb.PROP_ALBUM)
+            try:
+                artist = self.shell.props.db.entry_get(entry, rhythmdb.PROP_ARTIST)
+                title = self.shell.props.db.entry_get(entry, rhythmdb.PROP_TITLE)
+                album = self.shell.props.db.entry_get(entry, rhythmdb.PROP_ALBUM)
+            except TypeError:
+                return
             xchat.SetContext(self.xchat_context)
             xchat.Command('say Playing: %s - %s (%s)' % (artist, title, album))
             if not self.xchat_hook:
