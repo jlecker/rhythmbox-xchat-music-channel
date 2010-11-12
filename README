@@ -12,9 +12,6 @@ I am putting up here because we did not find any other plugins to accomplish
 this, and it seems others might benefit. Also for us to collaborate, and
 perhaps others can fork it to be improved for everyone.
 
-The first revision was written in a few hours, so it is quite rough. Make sure
-that XChat is started and the channel is joined before activating the plugin.
-
 
 USAGE:
     Copy the xchat_music_channel directory to your plugins directory (possibly
